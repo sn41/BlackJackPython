@@ -23,7 +23,7 @@ class Deck:
         card_id = self.get_random_id()
 
         # todo исправить оператор обычного деления на оператор целочисленного деления
-        card_suit_id = card_id // 9
+        card_suit_id = card_id / 9
 
         suit = ""
         rank = ""
@@ -40,7 +40,7 @@ class Deck:
                 suit = "♥"
 
         # todo исправить оператор обычного деления на оператор получения остатка от деления
-        card_rank_points_id = card_id % 9
+        card_rank_points_id = card_id / 9
 
         match card_rank_points_id:
             case 0:

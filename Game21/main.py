@@ -29,6 +29,7 @@ def draw_card(deck):
     return points
 
 
+# todo Добавьте очистку экрана перед каждым показом карт
 def game():
     deck = Deck()
     total = 0
@@ -42,8 +43,7 @@ def game():
             input_first_char = input().lower()[0]
             if input_first_char != "y":
                 break
-            else:
-                clear_screen()
+
         else:
             break
 
