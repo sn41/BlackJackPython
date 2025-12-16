@@ -1,0 +1,31 @@
+# было
+# [project]
+# name = "blackjackpython"
+# version = "0.1.0"
+# description = "Add your description here"
+# requires-python = ">=3.14"
+# dependencies = [
+#     "setuptools>=80.9.0",
+# ]
+
+
+
+[project]
+name = "game21"
+version = "0.1.0"
+description = "Практическая работа"
+authors = [{name = "ПО-2023-3"}]
+dependencies = []
+
+# Вот эта секция создает команду запуска!
+[project.scripts]
+game21 = "Game21.main:game"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# добавлено для точного указания пакета
+[tool.hatch.build.targets.wheel]
+packages = ["Game21"]
+
